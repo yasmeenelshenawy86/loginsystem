@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/fav-icon.webp" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Library-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap FRAMEWORK -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Sign Up StyleSheet -->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+<section>
+    <div class="wrapper">
+        <div class="p-3 mt-3">
+            <p id="reqFields" class="alert alert-danger p-1 ps-3 d-none">All Fields Required*</p>
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="FirstName">
+                <span class="redAstric d-none">*</span>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="LastName">
+                <span class="redAstric d-none">*</span>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" class="form-control" name="password" id="pass" placeholder="Password">
+                <span class="redAstric d-none">*</span>
+            </div>
+            <div id="alertMassage" class="d-none mesgValidation alert alert-danger d-flex">
+                <ul >
+                    <li>at least two uppercase letters.</li>
+                    <li>at least three lowercase letters.</li>
+                    <li>one special case letter.</li>
+                    <li>at least two numbers.</li> 
+                    <li>length [8-32]</li>
+                </ul>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" class="form-control" name="re-password" id="rePass" placeholder="Re-Password">
+                <span class="redAstric d-none">*</span>
+            </div>
+            <p id="matchPass" class="d-none greenMassage alert alert-success">match</p>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-envelope"></span>
+                <input type="email" class="form-control" name="email" id="email"placeholder="Email">
+                <span class="redAstric d-none">*</span>
+            </div>
+            <p id="emailAlert" class="alert alert-danger d-none">Your Email is Already Registered</p>
+            <p id="alert-suc" class=" alert alert-success p-1 d-none">Success You Can Sign In Now</p>
+            <button id="signUp" class="btn mt-3">Sign Up</button>
+        </div>
+        <div class="text-center fs-6">
+            <a id="signInPage" href="#">Sign In</a>
+        </div>
+    </div>
+</section>
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script src="./javascript/signup.js"></script>
+</body>
+
+</html>

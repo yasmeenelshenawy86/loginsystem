@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<!-- Fav Icon -->
+	<link rel="icon" href="assets/fav-icon.webp" type="image/png">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome Library-->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- bootstrap FRAMEWORK -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Main StyleSheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section>
+<div class="wrapper">
+	<div class="logo">
+		<img src="./assets/images (1).png" alt="faceBook">
+	</div>
+	<div class="text-center mt-4 name">
+		FaceBook
+	</div>
+	<div class="p-3 mt-3">
+		<div class="form-field d-flex align-items-center">
+			<span class="far fa-user"></span>
+			<input type="email" name="email" id="email" placeholder="email">
+		</div>
+		<div class="form-field d-flex align-items-center">
+			<span class="fas fa-key"></span>
+			<input type="password" name="password" id="password" placeholder="Password">
+		</div>
+		<div>
+			<input type="checkbox" id="check" name="check">
+			<label id="showPassword" for="check">Show Password</label>
+		</div>
+		<p id="emptyIn" class="alert alert-danger d-none">All Fields Requird</p>
+		<p id="emptyPass" class="alert alert-danger d-none">Incorrect Password</p>
+		<p id="loginAlert" class="alert alert-danger d-none">No Account For This Email Please Signup</p>
+		
+		<button id="loginBtn" class="btn mt-3">Login</button>
+	</div>
+	<div class="text-center fs-6">
+		<a id="forget-pass" href="#">Forget password?</a> or <a id="signUpPage" href="#">Sign up</a>
+	</div>
+</div>
+</section>
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script src="./javascript/index.js"></script>
+</body>
+</html>
